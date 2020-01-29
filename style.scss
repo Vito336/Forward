@@ -1,0 +1,201 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header-top{
+  background: #111111;
+}
+.header-top__logo{
+  cursor: pointer;
+}
+.header-top__inner{
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  align-items: center;
+}
+.header-top__menu-list{
+  display: flex;
+  li{
+    margin-right: 33px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      bottom: -6px;
+      transition: all .2s;
+    }
+    &:hover{
+      &::before{
+        background-color: $red;
+      }
+    }
+  }
+  a{
+    font-family: 'Gotham Pro Light';
+  }
+}
+.header-top__number{
+  font-family: 'Gotham Pro bold';
+  line-height: 15px;
+}
+.header-main{
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.header-main__title {
+  padding-top: 183px;
+  font-size: 64px;
+  line-height: 65px;
+  font-weight: 700;
+  max-width: 666px;
+}
+.header-main__subtitle {
+  padding: 42px 0 76px;
+  max-width: 564px;
+  line-height: 32px;
+  font-size: 24px;
+}
+.header-main__btn {
+  margin-bottom: 165px;
+}
+.header-main__descr {
+  display: flex;
+  align-items: center;
+  height: 82px;
+  padding-bottom: 117px;
+  .header-main__descr-img{
+    z-index: 1;
+  }
+}
+.header-main__descr-text {
+  max-width: 426px;
+  margin-top: -15px;
+}
+.header-main__img {
+  position: absolute;
+  right: 340px;
+  top: 110px;
+  img{
+    max-height: 825px;
+  }
+}
+.newbie__items {
+  padding-bottom: 71px;
+  display: flex;
+  justify-content: space-between;
+}
+.newbie__title-wrapper{
+  padding: 73px 0 66px;
+  text-align: center;
+}
+.newbie-item {
+  max-width: 370px;
+  background-color: #fff;
+}
+.newbie-item__img {
+}
+.decor {
+}
+.newbie-item__icon {
+  text-align: center;
+  margin: 46px 0
+}
+.newbie-item__title {
+  line-height: 26px;
+  margin: 0 auto 36px;
+  max-width: 260px;
+  font-size: 20px;
+  position: relative;
+  &::before{
+    content: '';
+    width: 42px;
+    height: 2px;
+    background-color: $red;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+  }
+}
+.newbie-item__descr {
+  line-height: 24px;
+  color: #777777;
+  max-width: 254px;
+  font-size: 18px;
+  margin: 0 auto 40px;
+}
+.newbie-item__btn {
+  margin: 0 auto 36px;
+  text-align: center;
+  min-width: 270px;
+  a{
+    min-width: 270px;
+  }
+}
+.trader-wrapper{
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.trader-info,
+.info{
+  background-color: #fff;
+  width: 1145px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.info__title{
+  margin: 76px 0 62px 203px;
+  text-align: center;
+}
+.info__box{
+  display: flex;
+  padding-left: 99px;
+}
+.info__box-img{
+  margin-right: 36px;
+}
+.info__box-title{
+  font-size: 36px;
+  line-height: 42px;
+  max-width: 513px;
+  margin-bottom: 11px;
+}
+.info__box-subtitle{
+  font-size: 18px;
+  color: #777;
+  max-width: 420px;
+  margin-bottom: 60px;
+}
+.info__btns{
+  margin: 0 30px 75px 200px;
+}
+.info__link{
+  margin-left: 30px;
+}
+.investor{
+  background-image: url(../images/investor-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  &-bg{
+    img{
+      width: 100%;
+    }
+  }
+  .info{
+    top: 0;
+    left: 0;
+    max-height: 929px;
+    padding-left: 300px;
+    z-index: 3;
+  }
+}
+
+
+@import "media";
