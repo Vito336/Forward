@@ -208,9 +208,6 @@
 }
 .reviews-slider{
   position: relative;
-  &__box{
-    
-  }
 }
 .slider-arrows{
   position: absolute;
@@ -225,6 +222,9 @@
 }
 .reviews-box{
   text-align: center;
+  width: 1088px;
+  position: relative;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   &__text{
@@ -268,6 +268,22 @@
   a{
     background-color: transparent;
     border: 1px solid #fff;
+  }
+}
+.slider-dots{
+  display: flex;
+  position: absolute;
+  right: 0;
+  li{
+    border-radius: 50%;
+    font-size: 0;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(#fff,.5);
+    margin-right: 20px;
+    button{
+      display: none;
+    }
   }
 }
 @import "media";
