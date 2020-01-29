@@ -3,10 +3,6 @@
 @import "fonts";
 @import "global";
 
-.test{
-  background: #000;
-}
-
 .header-top{
   background: #111111;
 }
@@ -191,6 +187,7 @@
     img{
       width: 100%;
     }
+    max-height: 1130px;
   }
   .info{
     top: 0;
@@ -201,5 +198,32 @@
   }
 }
 
+.reviews{
+  background-image: url(../images/reviews-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .title{
+    color: #fff;
+  }
+  .title-wrapper{
+    padding: 80px 0;
+    text-align: center;
+  }
+}
+.reviews-box{
+  display: flex;
+  justify-content: center;
+  &__text{
+    background-color: #fff;
+    max-width: 586px;
+    max-height: 500px;
+  }
+}
+.reviews-box__img{
+  img{
+    max-width: 586px;
+    max-height: 500px;
+  }
+}
 
 @import "media";
