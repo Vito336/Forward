@@ -248,5 +248,11 @@
   display: flex;
   justify-content: center;
 }
-
+.reviews__btn{
+  margin-top: 54px;
+  a{
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+}
 @import "media";
