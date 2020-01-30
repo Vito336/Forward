@@ -208,16 +208,18 @@
 }
 .reviews-slider{
   position: relative;
+  max-width: 1088px;
+  margin: 0 auto;
 }
 .slider-arrows{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   &__left{
-    left: 270px;
+    left: -85px;
   }
   &__right{
-    right: 270px;
+    right: -85px;
   }
 }
 .reviews-box{
@@ -298,6 +300,8 @@
 }
 .slider-dots .slick-active{
   background-color: #fff;
-  background-image: url(../images/active-dots.svg);
+  &::before{
+    content: '';
+  }
 }
 @import "media";
