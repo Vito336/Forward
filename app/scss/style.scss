@@ -3,10 +3,6 @@
 @import "fonts";
 @import "global";
 
-.test{
-  background: #000;
-}
-
 .header-top{
   background: #111111;
 }
@@ -102,10 +98,6 @@
   max-width: 370px;
   background-color: #fff;
 }
-.newbie-item__img {
-}
-.decor {
-}
 .newbie-item__icon {
   text-align: center;
   margin: 46px 0
@@ -191,6 +183,7 @@
     img{
       width: 100%;
     }
+    max-height: 1130px;
   }
   .info{
     top: 0;
@@ -201,5 +194,121 @@
   }
 }
 
-
+.reviews{
+  background-image: url(../images/reviews-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .title{
+    color: #fff;
+  }
+  .title-wrapper{
+    padding: 80px 0;
+    text-align: center;
+  }
+}
+.reviews-slider{
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.slider-arrows{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &__left{
+    left: -85px;
+  }
+  &__right{
+    right: -85px;
+  }
+}
+.reviews-box{
+  text-align: center;
+  width: 1088px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  &__text{
+    background-color: #fff;
+    width: 586px;
+    max-height: 500px;
+  }
+}
+.reviews-box__img{
+  img{
+    max-width: 586px;
+    max-height: 500px;
+  }
+}
+.reviews-box__text-title{
+  font-size: 24px;
+  line-height: 23px;
+  font-weight: 700;
+  padding: 114px 0 12px;
+}
+.reviews-box__text-subtitle{
+  color: #777;
+}
+.reviews-box__text-img{
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+.reviews-box__text-descr{
+  width: 415px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #777777;
+}
+.reviews-box__text-descr--inner{
+  display: flex;
+  justify-content: center;
+}
+.reviews__btn{
+  width: 1088px;
+  display: flex;
+  justify-content: flex-start;
+  margin: -25px auto;
+  padding-bottom: 80px;
+  a{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+    z-index: 1;
+    &:hover{
+      background-color: rgba(#fff,.25);
+    }
+  }
+}
+.slider-dots{
+  display: flex;
+  width: 1088px;
+  margin: 66px auto 0;
+  justify-content: flex-end;
+  li{
+    border-radius: 50%;
+    font-size: 0;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(#fff,.5);
+    margin-left: 20px;
+    button{
+      display: none;
+    }
+  }
+}
+.slider-dots .slick-active{
+  background-color: #fff;
+  position: relative;
+  width: 1px;
+  height: 1px;
+  padding: 3px;
+  &::before{
+    content: url(../images/active-dots.svg);
+    top: -9px;
+    left: -6px;
+    position: absolute;
+  }
+}
 @import "media";
