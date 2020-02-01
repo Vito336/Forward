@@ -311,4 +311,64 @@
     position: absolute;
   }
 }
+.timetable__title{
+  margin: 94px 0 78px;
+  &-wrapper{
+    text-align: center;
+  }
+}
+.table{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.table{
+  display: flex;
+}
+
+.table-box{
+  width: 585px;
+}
+.table-rowtitle{
+  background-color: $red;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  display: flex;
+}
+.table-rowtitle__date{
+  padding: 28px 35px 14px 70px;
+}
+.table-rowtitle__name{
+  padding: 28px 0 28px 51px;
+}
+.table-row--gray{
+  background-color: #efefef;
+}
+.table-row--white{
+  background-color: #fff;
+}
+.table-row__date{
+  span{
+    line-height: 56px;
+    color: #E31E25;
+    font-size: 36px;
+    display: block;
+    padding: 48px 35px 0 0;
+  }
+  line-height: 20px;
+  color: #777777;
+  font-size: 16px;
+  width: 45px;
+  padding: 0 27px 45px 69px;
+  position: relative;
+  &::before{
+    content: '';
+    width: 2px;
+    height: 110px;
+    background-color: rgba(#999,.35);
+    position: absolute;
+    top: 38px;
+    right: -53px;
+  }
+}
 @import "media";
