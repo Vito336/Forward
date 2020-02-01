@@ -208,7 +208,7 @@
 }
 .reviews-slider{
   position: relative;
-  max-width: 1088px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .slider-arrows{
@@ -300,8 +300,15 @@
 }
 .slider-dots .slick-active{
   background-color: #fff;
+  position: relative;
+  width: 1px;
+  height: 1px;
+  padding: 3px;
   &::before{
-    content: '';
+    content: url(../images/active-dots.svg);
+    top: -9px;
+    left: -6px;
+    position: absolute;
   }
 }
 @import "media";
