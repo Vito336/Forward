@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="css/contacts-style.min.css">
+</head>
+
+<body>
+	<header class="header-top">
+		<div class="container">
+			<div class="header-top__inner">
+				<div class="header-top__logo">
+					<img src="images/logo.svg" alt="">
+				</div>
+				<div class="header-top__menu">
+					<ul class="header-top__menu-list">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Программы</a></li>
+						<li><a href="#">Обучение</a></li>
+						<li class="current-page"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header-top__number">
+					<a href="tel:+7(843) 500-55-73">+7(843) 500-55-73</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="contacts">
+		<div class="contacts__title-wrapper title-wrapper">
+			<div class="contacts__title title">
+				Контакты
+			</div>
+		</div>
+		<div class="container">
+
+
+			<div class="contacts-box">
+				<div class="card">
+					<div class="card__img">
+						<img src="images/card-img.png" alt="">
+					</div>
+					<div class="card__address">
+						г.Чебоксары, ул.Парижской Коммуны д.26, 3 этаж, офис. 1
+					</div>
+					<div class="card__number">
+						+7(843) 500-55-73
+					</div>
+					<div class="card__date">
+						Пн. - Пт. 10:00 - 20:00
+					</div>
+				</div>
+				<div class="request">
+					<div class="request__inner">
+						<div class="request-title request__title-1">
+							Успейте подать заявку<br>на бесплатное обучение !
+						</div>
+						<div class="request__form form">
+							<form>
+
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="Forward">
+								<input type="hidden" name="admin_email" value="nikita.naumov.02@gmail.com">
+								<input type="hidden" name="form_subject" value="Заявка на обучение с сайта ФОРВАРД">
+								<!-- END Hidden Required Fields -->
+								<div class="form__inputs">
+									<div class="form__name form__input">
+										<span>Ваше имя</span>
+										<input type="text" name="Name" required><br>
+									</div>
+									<div class="form__phone form__input">
+										<span>Ваш телефон</span>
+										<input type="text" name="Phone"><br>
+									</div>
+								</div>
+								<div class="form__checkbox">
+									<div class="checkbox">
+										<input type="checkbox">
+									</div>
+									<div class="form__checkbox-text">
+										Заполняя форму Вы даете согласие на обработку персональных данных и соглашаетесь с условиями
+										политики
+										конфиденциальности.
+									</div>
+								</div>
+								<button class="form__button">Отправить</button>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
