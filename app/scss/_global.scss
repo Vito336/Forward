@@ -65,6 +65,9 @@ a{
 		position: absolute;
 		bottom: -5px;
 	}
+	&-wrapper{
+		text-align: center;
+	}
 }
 .slider-arrows{
 	border: 1px solid rgba(#fff,.25);
@@ -82,5 +85,17 @@ a{
 	&:hover{
 		cursor: pointer;
 		background-color: rgba(#fff,.25);
+	}
+}
+.form{
+	button{
+		width: 270px;
+		text-align: center;
+		font-size: 18px;
+		padding: 12px 0;
+		background-color: $red;
+		color: #fff;
+		border: none;
+		cursor: pointer;
 	}
 }
