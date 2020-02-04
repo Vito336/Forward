@@ -3,19 +3,19 @@
 @import "fonts";
 @import "global";
 
-.header-top{
+.header{
   background: #111111;
 }
-.header-top__logo{
+.header__logo{
   cursor: pointer;
 }
-.header-top__inner{
+.header__inner{
   display: flex;
   justify-content: space-between;
   height: 110px;
   align-items: center;
 }
-.header-top__menu-list{
+.header__menu-list{
   display: flex;
   li{
     margin-right: 33px;
@@ -45,7 +45,7 @@
     font-family: 'Gotham Pro Light';
   }
 }
-.header-top__number{
+.header__number{
   font-family: 'Gotham Pro bold';
   line-height: 15px;
 }
