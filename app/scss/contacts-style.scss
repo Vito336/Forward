@@ -45,4 +45,11 @@ body{
 	z-index: 999;
 	top: 80px;
 }
+.sticky{
+	position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+
+
 @import "media";
