@@ -32,4 +32,14 @@ body{
 		max-width: 325px;
 	}
 }
+.footer{
+	margin: 0;
+	position: relative;
+}
+.arrow-top{
+	position: absolute;
+	right: 52px;
+	z-index: 999;
+	top: 80px;
+}
 @import "media";
