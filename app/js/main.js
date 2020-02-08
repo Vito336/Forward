@@ -17,10 +17,10 @@ $(function () {
 		});
 	});
 
-	
+
 
 	(function(){  // анонимная функция (function(){ })(), чтобы переменные "a" и "b" не стали глобальными
-var a = document.querySelector('#aside1'), b = null;  // селектор блока, который нужно закрепить
+var a = document.querySelector('#arrow-top'), b = null;  // селектор блока, который нужно закрепить
 window.addEventListener('scroll', Ascroll, false);
 document.body.addEventListener('scroll', Ascroll, false);  // если у html и body высота равна 100%
 function Ascroll() {

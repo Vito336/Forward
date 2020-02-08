@@ -39,15 +39,18 @@ body{
 	margin: 0;
 	position: relative;
 }
-.arrow-top{
+.google-maps{
+	position: relative;
+}
+.arrow-top__inner{
 	position: absolute;
 	right: 52px;
-	z-index: 999;
+ 	z-index: 999;
 	top: 80px;
 }
 .sticky{
 	position: fixed;
-  top: 0px;
+  top: 800px;
   z-index: 101;
 }
 
