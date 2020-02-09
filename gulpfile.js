@@ -28,7 +28,8 @@ gulp.task('css', function(){
 		'node_modules/normalize.css/normalize.css',
 		'node_modules/slick-carousel/slick/slick.css',
 		'node_modules/animate.css/animate.css',
-
+		'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+		'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
 	])
 	.pipe(concat('_libs.scss'))
 		.pipe(gulp.dest('app/scss'))
@@ -48,6 +49,7 @@ gulp.task('script', function(){
 gulp.task('js', function(){
 	return gulp.src([
 		'node_modules/slick-carousel/slick/slick.js',
+		'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
