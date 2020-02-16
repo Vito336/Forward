@@ -1,0 +1,30 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+@import "style";
+
+.top{
+	margin-bottom: 93px;
+	background-image: url(../images/about-top-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	color: #fff;
+	&__title{
+		margin: 91px 0 123px;
+		color: #fff;
+	}
+	&__text{
+		max-width: 484px;
+		&-2{
+			margin: 28px 0 84px;
+		}
+	}
+	&__btn{
+		padding-bottom: 153px;
+	}
+}
+
+
+@import "media";
