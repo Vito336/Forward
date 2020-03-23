@@ -411,6 +411,9 @@
 .table-btn{
   box-shadow: 0px 5px 10px rgba(225, 83, 83, 0.15);
   margin: 70px auto 76px;
+  a{
+    min-width: 370px;
+  }
 }
 .request{
   width: 1170px;
